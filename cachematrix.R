@@ -8,8 +8,7 @@
 ## [1,]   -2  1.5
 ## [2,]    1 -0.5
 
-## Create a special "matrix," which is a list containing a
-## function to
+## Create a special "matrix," which is a list containing a function to
 ## - set the value of the matrix
 ## - get the value of the matrix
 ## - set the value of the inverse matrix
@@ -30,11 +29,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Calculate the inverse of 'x,' the special "matrix" created 
-## with the above function. Checks first to see if inverse has
-## already been calculated and, if so, retrieves inverse from
-## cache and skips compuation. If inverse is not already in
-## cache, calculates the inverse and stores the value of the 
+## Calculate the inverse of 'x,' the special "matrix" created with the above function. Checks cache first to see if inverse has already been calculated and, if so, retrieves inverse and skips compuation. If inverse is not already in cache, calculates the inverse and stores the value of the 
 ## inverse in the cache via the setinverse function.
 
 cacheSolve <- function(x, ...) {
